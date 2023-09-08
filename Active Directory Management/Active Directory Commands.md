@@ -23,10 +23,6 @@ sfc /scannow
 ```
 shutdown /r /t 0
 ```
-### View Event Logs
-```
-eventvwr.msc
-```
 ### Control Panel
 ```
 control
@@ -35,21 +31,45 @@ control
 ```
 taskmgr
 ```
-### Computer Management
-```
-compmgmt.msc
-```
-### Open Windows Services
-```
-services.msc
-```
 ### Command Prompt as Administrator
 ```
 runas /user:Administrator cmd
 ```
+### System Properties
+```
+sysdm.cpl
+```
+### Network Connections
+```
+ncpa.cpl
+```
+### Display Properties
+```
+desk.cpl
+```
+### Sound Properties
+```
+mmsys.cpl
+```
+### Mouse Properties
+```
+main.cpl
+```
+### Printers and Devices
+```
+control printers
+```
 ### Windows Firewall Settings
 ```
 firewall.cpl
+```
+### Power Options
+```
+powercfg.cpl
+```
+### System Config
+```
+msconfig.exe
 ```
 ### File Explorer (Open Current Directory)
 ```
