@@ -6,7 +6,7 @@ This repository contains a collection of safe and useful PowerShell scripts for 
 
 ### 1. Clear Browser Cache for All User Profiles
 
-- [ClearBrowserCache.ps1](/ClearBrowserCache.ps1)
+- [ClearBrowserCache.ps1](/Powershell%20Scripts/PowerShell_Scripts/ClearBrowserCache.ps1)
 - *Description*: Clears the browser cache for all user profiles on the system (supports Chrome, Firefox, and Edge).
 
 ### 2. Disable Unnecessary Startup Services
