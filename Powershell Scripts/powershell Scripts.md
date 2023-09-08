@@ -92,5 +92,5 @@ Write-Host "Top $TopN CPU-Consuming Processes:"
 ```
 ### Clear Browser Cache for All User Profiles
 
-- [Script](scripts/ClearBrowserCache.ps1)
+- [ClearBrowserCache.ps1](admin-commands/ClearBrowserCache.ps1)
 - Description: Clears the browser cache for all user profiles on the system (supports Chrome, Firefox, and Edge).
