@@ -89,8 +89,8 @@ $TopRAM = Get-Process | Sort-Object -Property WorkingSet -Descending | Select-Ob
 
 # Display top CPU-consuming processes
 Write-Host "Top $TopN CPU-Consuming Processes:"
-
-### 2. Clear Browser Cache for All User Profiles
+```
+### Clear Browser Cache for All User Profiles
 
 - [Script](scripts/ClearBrowserCache.ps1)
 - Description: Clears the browser cache for all user profiles on the system (supports Chrome, Firefox, and Edge).
