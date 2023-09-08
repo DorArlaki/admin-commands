@@ -105,7 +105,7 @@ This repository contains a collection of safe and useful PowerShell scripts for 
 
 ### 2. Disable Unnecessary Startup Services
 
-- [DisableStartupServices.ps1](/DisableStartupServices.ps1)
+- [DisableStartupServices.ps1](/Powershell Scripts/PowerShell_Scripts/DisableStartupService.ps1)
 - Description: Disables specific startup services that may not be needed.
 
 ### 4. List Installed Software
