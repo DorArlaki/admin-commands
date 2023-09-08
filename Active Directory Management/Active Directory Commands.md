@@ -19,6 +19,10 @@ chkdsk C: /f
 ```
 sfc /scannow
 ```
+## Windows System File Repair Tool
+```
+DISM /Online /Cleanup-Image /RestoreHealth
+```
 ### Restart or Shutdown the Computer
 ```
 shutdown /r /t 0
