@@ -39,20 +39,5 @@ This repository contains a collection of safe and useful PowerShell scripts for 
 - [DisplaySystemInfo.ps1](/Powershell%20Scripts/PowerShell_Scripts/DisplaySystemInfo.ps1)
 - *Description*: Displays general system information, such as computer name, operating system, and architecture.
 
-### 9. Clean User's Temporary Files
-
-- [CleanUserTemporaryFiles.ps1](/Powershell%20Scripts/PowerShell_Scripts/CleanUserTemporaryFiles.ps1)
-- *Description*: Cleans the user's temporary files, freeing up disk space and improving system performance by removing unnecessary temporary data.
-
-### 10. Performance Optimization and Cleanup Script
-
-- [PerformanceOptimizationCleanup.ps1](/Powershell%20Scripts/PowerShell_Scripts/PerformanceOptimizationCleanup.ps1)
-- *Description*: Enhances Windows system performance by disabling resource-intensive services, clearing temporary files, optimizing startup programs, and adjusting visual effects settings.
-
-## 11. Top CPU and RAM Usage Monitor Script
-
-- [TopCPURAMUsageMonitor.ps1](/Powershell%20Scripts/PowerShell_Scripts/TopCPURAMUsageMonitor.ps1)
-- *Description*: Monitors and displays the top CPU and RAM-consuming processes on your Windows computer, providing insights into resource-intensive applications.
-
 
 
