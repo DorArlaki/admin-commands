@@ -110,7 +110,7 @@ This repository contains a collection of safe and useful PowerShell scripts for 
 
 ### 4. List Installed Software
 
-- [ListInstalledSoftware.ps1](/ListInstalledSoftware.ps1)
+- [ListInstalledSoftware.ps1](/Powershell%20Scripts/PowerShell_Scripts//ListInstalledSoftware.ps1)
 - Description: Lists all installed software on the computer.
 
 ### 5. Create a System Restore Point
