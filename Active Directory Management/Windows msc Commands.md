@@ -107,3 +107,9 @@ tsadmin.msc
 mdsched.exe
 ```
 - Runs the Windows Memory Diagnostic tool to check for memory (RAM) issues.
+
+### Keyboard Shortcuts to Move Windows
+```
+    Win + Shift + Left Arrow: Move the active window to the left screen (for multi-monitor setups).
+    Win + Shift + Right Arrow: Move the active window to the right screen (for multi-monitor setups).
+```
