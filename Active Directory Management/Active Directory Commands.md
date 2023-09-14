@@ -15,10 +15,12 @@ wuauclt /detectnow
 ```
 chkdsk C: /f
 ```
+- [README_chkds_C.md](Management_README/README_chkds_C.md)
 ### System File Checker
 ```
 sfc /scannow
 ```
+- [README_sfc_scannow.md](Management_README/README_sfc_scannow.md)
 ## Windows System File Repair Tool
 ```
 DISM /Online /Cleanup-Image /RestoreHealth
