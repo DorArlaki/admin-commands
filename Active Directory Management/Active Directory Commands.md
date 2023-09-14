@@ -23,7 +23,7 @@ sfc /scannow
 ```
 DISM /Online /Cleanup-Image /RestoreHealth
 ```
-- [Windows_DISM_RestoreHealth_Guide.md](/Active%20Directory%20Commands.md/Windows_System_File_Repair_Tool.md)
+- [Windows_DISM_RestoreHealth_Guide.md](/ActiveDirectoryCommands.md/Windows_System_File_Repair_Tool.md)
 ### Restart or Shutdown the Computer
 ```
 shutdown /r /t 0
