@@ -32,9 +32,9 @@ This PowerShell script is designed to clean the temporary folders (%Temp%) for a
      ```
      Note: Set the Execution Policy back to the original when finish - you can check the Current Execution Policy by 
 running:
-```
-Get-ExecutionPolicy
-```
+      ```
+      Get-ExecutionPolicy
+      ```
 4. **Run the Script:**
    - Run the script. It will automatically clean the temporary folders for all user profiles, skipping files that are currently in use by Windows.
 
