@@ -2,7 +2,7 @@
 
 ## Overview
 
-The "Get-UserGroupMembers.ps1" PowerShell script is designed to `retrieve and store information about user group memberships in a specified domain`. It queries Active Directory to gather data on user accounts and the groups they belong to, and then exports this information to a CSV file. This script is useful for administrators who need to manage and analyze user group memberships within their organization.
+The "Get-UserGroupMembers.ps1" PowerShell script is designed to `retrieve and store information about user group memberships in a specified domain`. It queries Active Directory to gather data on user accounts and the groups they belong to, and then `exports this information to a CSV file`. This script is useful for administrators who need to manage and analyze user group memberships within their organization.
 
 ## Usage
 
