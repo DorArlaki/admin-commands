@@ -42,4 +42,3 @@ Troubleshooting
     If you encounter connection issues or have trouble retrieving information, please ensure that PowerShell Remoting is enabled on the target computers and that you have the necessary administrative privileges.
 
     In case of errors, the script will provide error messages to help identify and resolve issues.
-
