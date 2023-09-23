@@ -57,9 +57,6 @@ Feel free to modify and enhance this script to meet your specific needs and requ
 
 **Disclaimer:** Use this script responsibly and in accordance with your organization's policies and guidelines.
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
 
 ---
 
