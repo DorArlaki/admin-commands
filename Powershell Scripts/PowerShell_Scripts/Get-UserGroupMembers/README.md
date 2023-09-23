@@ -26,7 +26,7 @@ Step2. Execute the Script: Run the script using PowerShell by entering:
 ```
 . .\Get-UserGroupMembers.ps1   # in the PowerShell console. It will query user group memberships in the specified domain and generate the CSV file.
 ```
->[!info]
+>[!warning]
 >Once the script completes its execution, you can find the CSV file at the location specified in the $OutputFilePath variable.
 >This CSV file contains user names and their corresponding group memberships.CSV Format
 
