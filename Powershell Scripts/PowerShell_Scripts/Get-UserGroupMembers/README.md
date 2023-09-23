@@ -16,15 +16,16 @@ Before using this script, ensure the following:
 
 ### Running the Script
 
-1. **Define the Output File Path**: Open the script file, `Get-UserGroupMembers.ps1`, in a text editor of your choice. Modify the `$OutputFilePath` variable to specify the location and filename for the CSV output file. For example:
+Step 1. **Define the Output File Path**: Open the script file, `Get-UserGroupMembers.ps1`, in a text editor of your choice. Modify the `$OutputFilePath` variable to specify the location and filename for the CSV output file. For example:
 
    ```powershell
    $OutputFilePath = "C:\UserGroupMembers.csv"
    ```
-Save your changes.
 
-    Execute the Script: Run the script using PowerShell by entering . .\Get-UserGroupMembers.ps1 in the PowerShell console. It will query user group memberships in the specified domain and generate the CSV file.
-
+Step2. Execute the Script: Run the script using PowerShell by entering:
+```
+. .\Get-UserGroupMembers.ps1 # in the PowerShell console. It will query user group memberships in the specified domain and generate the CSV file.
+```
 Reviewing the Output
 
 Once the script completes its execution, you can find the CSV file at the location specified in the $OutputFilePath variable. This CSV file contains user names and their corresponding group memberships.
