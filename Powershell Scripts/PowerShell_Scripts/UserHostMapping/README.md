@@ -1,44 +1,33 @@
-# User and Hostname Mapping Script
+# User-Hostname Mapper Script
 
-This script is designed for network administrators who want to map user names to their corresponding PC hostnames. It's particularly useful for managing remote connections, such as VNC sessions, where you need to connect to specific users' computers.
+## Overview
+The User-Hostname Mapper script is a PowerShell script designed to help network administrators of the Soreq domain map users to their corresponding PC hostnames. This mapping is useful for remote administration tasks, such as connecting to users' PCs using their hostnames.
 
 ## Prerequisites
-
-Before running the script, make sure you have the following prerequisites in place:
-
-1. PowerShell: Ensure that PowerShell is installed on the computer where you plan to run this script.
-
-2. Administrator Privileges: You need administrative privileges on the target computers to enable PowerShell Remoting and retrieve user information.
+Before using the script, ensure that the following prerequisites are met:
+1. PowerShell is installed on the computer where you plan to run the script.
+2. You have appropriate administrative access to the target PCs in the Soreq domain.
+3. The PCs in the Soreq domain have PowerShell Remoting (WinRM) enabled.
 
 ## Usage
+1. Clone or download the script to your local machine.
 
-1. Define an array of computer names (hostnames) that you want to query. Edit the `$computers` array in the script to include the hostnames of the computers you want to target.
+2. Open the script in a text editor or PowerShell Integrated Scripting Environment (ISE).
 
-```powershell
-$computers = @("PC-000", "PC-001", ...)  # Add all the computer names you want to query
-```
-    Run the script. It will perform the following actions:
-        - Enable PowerShell Remoting on the remote computers (if not already enabled).
-        - Retrieve the last logged-in user on each remote computer.
-        - Create an array containing user and hostname information.
-        - Save this information to a CSV file named "UserHostnames.csv" in the same directory as the script.
+3. Modify the `$computers` array to include the computer names (hostnames) you want to query. For example:
+   ```powershell
+   $computers = Get-Content -Path "ComputerNames.txt"
 
-    After running the script, you'll have a CSV file ("UserHostnames.csv") that contains two columns: "User" and "Hostname." The "User" column lists the last logged-in user for each PC, and the "Hostname" column lists the corresponding computer name.
+You can replace "ComputerNames.txt" with the path to a text file containing a list of computer names, one per line.
 
-Example
+    Run the script in PowerShell.
 
-Suppose you have a network with computers named "PC-000," "PC-001," and so on. After running the script with these computer names, you'll get a CSV file with entries like this:
+    The script will connect to each computer, retrieve the last logged-in user, and create a CSV file named "UserHostnames.csv" with two columns: "User" and "Hostname." This file will contain the mapping of users to their respective PC hostnames.
 
-python
+    You can now use the "UserHostnames.csv" file for remote administration tasks, such as connecting to users' PCs using their hostnames.
 
-User,Hostname
-User1,PC-000
-User2,PC-001
-...
+Notes
 
-Now, you can easily reference this CSV file to connect to specific users' PCs by their hostnames, making remote administration tasks more efficient.
-Troubleshooting
+    The script automatically handles errors and timeouts when connecting to remote PCs. If a PC is unreachable or encounters an error during retrieval, it will be noted in the PowerShell output, and the script will continue to the next PC.
 
-    If you encounter connection issues or have trouble retrieving information, please ensure that PowerShell Remoting is enabled on the target computers and that you have the necessary administrative privileges.
-
-    In case of errors, the script will provide error messages to help identify and resolve issues.
+    Ensure that PowerShell Remoting (WinRM) is enabled on the target PCs in the Soreq domain. You can use Group Policy or other methods to enable WinRM across your network.
