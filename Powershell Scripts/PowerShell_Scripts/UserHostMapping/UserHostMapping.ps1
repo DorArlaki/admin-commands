@@ -1,9 +1,3 @@
-# Define an array to store computer names (hostnames)
-$computers = @("PC-000", "PC-001")  # Add all the computer names you want to query
-
-# Create an empty array to store user and hostname information
-$usersAndHostnames = @()
-
 # Function to get the last logged-in user on a remote computer
 function Get-LastLoggedUser {
     param (
@@ -24,21 +18,31 @@ function Get-LastLoggedUser {
     }
 }
 
-# Loop through each computer
-foreach ($computer in $computers) {
-    # Get the last logged-in user on the remote computer
-    $lastLoggedUser = Get-LastLoggedUser -ComputerName $computer
+# Function to run the script on a list of computers
+function Run-ScriptOnComputers {
+    param (
+        [string[]]$ComputerNames
+    )
 
-    if ($lastLoggedUser) {
-        # Add user and hostname information to the array
-        $usersAndHostnames += [PSCustomObject]@{
-            User = $lastLoggedUser
-            Hostname = $computer
+    $usersAndHostnames = @()
+
+    foreach ($computer in $ComputerNames) {
+        $lastLoggedUser = Get-LastLoggedUser -ComputerName $computer
+
+        if ($lastLoggedUser) {
+            $usersAndHostnames += [PSCustomObject]@{
+                User = $lastLoggedUser
+                Hostname = $computer
+            }
         }
     }
+
+    $usersAndHostnames | Export-Csv -Path "UserHostnames.csv" -NoTypeInformation
+    Write-Host "User and hostname information has been saved to UserHostnames.csv."
 }
 
-# Save the user and hostname information to a CSV file
-$usersAndHostnames | Export-Csv -Path "UserHostnames.csv" -NoTypeInformation
+# Query computer names from Active Directory
+$computerNames = Get-ADComputer -Filter * | Select-Object -ExpandProperty Name
 
-Write-Host "User and hostname information has been saved to UserHostnames.csv."
+# Run the script on the retrieved computer names
+Run-ScriptOnComputers -ComputerNames $computerNames
