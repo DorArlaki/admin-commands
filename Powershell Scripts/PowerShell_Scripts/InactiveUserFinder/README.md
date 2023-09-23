@@ -14,7 +14,7 @@ Before using this script, ensure you have the following prerequisites in place:
 
   ```powershell
   Install-WindowsFeature RSAT-AD-PowerShell
-```
+
 # Usage
 
 ## Getting Started
@@ -33,7 +33,7 @@ Before using this script, ensure you have the following prerequisites in place:
 5. **Run the Script:** Execute the script by running the following command:
    ```powershell
    .\InactiveUserFinder.ps1
-```
+
 
 # Processing and CSV Report
 
