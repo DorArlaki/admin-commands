@@ -2,7 +2,7 @@
 
 ## Overview
 
-This PowerShell script is designed to generate a report of inactive user accounts in an Active Directory domain, specifically for the "soreq.local" domain. It identifies users who have not logged in for a specified number of days (default is 1 day) and exports the results to a CSV file for further analysis.
+This PowerShell script is designed to generate a report of inactive user accounts in an Active Directory domain. It identifies users who have not logged in for a specified number of days (default is 1 day) and exports the results to a CSV file for further analysis.
 
 ## Prerequisites
 
