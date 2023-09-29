@@ -30,6 +30,10 @@ DISM /Online /Cleanup-Image /RestoreHealth
 ```
 shutdown /r /t 0
 ```
+### Command Prompt as Administrator
+```
+runas /user:Administrator cmd
+```
 ### Control Panel
 ```
 control
@@ -37,10 +41,6 @@ control
 ### Task Manager
 ```
 taskmgr
-```
-### Command Prompt as Administrator
-```
-runas /user:Administrator cmd
 ```
 ### System Properties
 ```
