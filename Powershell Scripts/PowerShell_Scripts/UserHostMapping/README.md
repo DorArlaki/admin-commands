@@ -1,7 +1,7 @@
 # User-Hostname Mapper Script
 
 ## Overview
-The User-Hostname Mapper script is a PowerShell script designed to help network administrators of the Soreq domain map users to their corresponding PC hostnames. This mapping is useful for remote administration tasks, such as connecting to users' PCs using their hostnames.
+The User-Hostname Mapper script is a PowerShell script designed to help network administrators of  domain map users to their corresponding PC hostnames. This mapping is useful for remote administration tasks, such as connecting to users' PCs using their hostnames.
 
 ## Prerequisites
 Before using the script, ensure that the following prerequisites are met:
