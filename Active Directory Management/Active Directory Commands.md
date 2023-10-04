@@ -8,11 +8,11 @@ Retrieve essential system information and hardware details with a single command
 systeminfo | findstr /C:"Host Name" /C:"OS Name" /C:"Total Physical Memory" /C:"System Boot Time" /C:"System Up Time" & wmic logicaldisk get caption,description,freespace,size & wmic cpu get name, maxclockspeed & ipconfig /all | findstr /C:"DNS Servers" /C:"NetBIOS over Tcpip" /C:"IPv4 Address" /C:"Subnet Mask" /C:"DHCP Enabled" /C:"Autoconfiguration Enabled" /C:"Connection-specific DNS Suffix" & whoami
 ```
 ### Check for Windows Updates
-```
+```shell
 wuauclt /detectnow
 ```
 ### Check Disk Utility
-```
+```shell
 chkdsk C: /f
 ```
 - [README_chkds_C.md](Management_README/README_chkds_C.md)
@@ -27,59 +27,59 @@ DISM /Online /Cleanup-Image /RestoreHealth
 ```
 - [Windows_DISM_RestoreHealth_Guide.md](Management_README/Windows_System_File_Repair_Tool.md)
 ### Restart or Shutdown the Computer
-```
+```shell
 shutdown /r /t 0
 ```
 ### Command Prompt as Administrator
-```
+```shell
 runas /user:Administrator cmd
 ```
 ### Control Panel
-```
+```shell
 control
 ```
 ### Task Manager
-```
+```shell
 taskmgr
 ```
 ### System Properties
-```
+```shell
 sysdm.cpl
 ```
 ### Network Connections
-```
+```shell
 ncpa.cpl
 ```
 ### Display Properties
-```
+```shell
 desk.cpl
 ```
 ### Sound Properties
-```
+```shell
 mmsys.cpl
 ```
 ### Mouse Properties
-```
+```shell
 main.cpl
 ```
 ### Printers and Devices
-```
+```shell
 control printers
 ```
 ### Windows Firewall Settings
-```
+```shell
 firewall.cpl
 ```
 ### Power Options
-```
+```shell
 powercfg.cpl
 ```
 ### System Config
-```
+```shell
 msconfig.exe
 ```
 ### File Explorer (Open Current Directory)
-```
+```shell
 start .
 ```
 ### Notepad (Open a Text File)
