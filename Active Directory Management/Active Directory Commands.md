@@ -107,3 +107,5 @@ Get-ADPrincipalGroupMembership -Identity "UserName" | Select-Object Name
 ```powershell
 Start-ADSyncSyncCycle -PolicyType Delta
 ```
+- [README_chkds_C.md](Management_README/README_Delta-Sync.md)
+- [README_chkds_C.md](Management_README/README_chkds_C.md)
