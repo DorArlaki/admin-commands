@@ -98,3 +98,8 @@ dir C:\ /s /b | findstr /i "search_term"
 ```
 wmic process where "name='process_name'" get executablepath
 ```
+
+### List groups of user "UserName"
+```
+Get-ADPrincipalGroupMembership -Identity "UserName" | Select-Object Name
+```
