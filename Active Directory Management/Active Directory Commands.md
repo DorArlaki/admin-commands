@@ -83,19 +83,19 @@ msconfig.exe
 start .
 ```
 ### Notepad (Open a Text File)
-```
+```shell
 notepad filename.txt
 ```
 ### Add User to Administrator Group
-```
+```shell
 net localgroup administrators username /add
 ```
 ### Find Files or Directories Containing a Specific Term
-```
+```shell
 dir C:\ /s /b | findstr /i "search_term"
 ```
 ### Find Path of Specific Process by Name
-```
+```shell
 wmic process where "name='process_name'" get executablepath
 ```
 
@@ -104,6 +104,6 @@ wmic process where "name='process_name'" get executablepath
 Get-ADPrincipalGroupMembership -Identity "UserName" | Select-Object Name
 ```
 ### Start Delta Sync cycle
-```batch
+```powershell
 Start-ADSyncSyncCycle -PolicyType Delta
 ```
