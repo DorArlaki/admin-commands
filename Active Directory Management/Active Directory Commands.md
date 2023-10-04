@@ -100,6 +100,10 @@ wmic process where "name='process_name'" get executablepath
 ```
 
 ### List groups of user "UserName"
-```
+```powershell
 Get-ADPrincipalGroupMembership -Identity "UserName" | Select-Object Name
+```
+### Start Delta Sync cycle
+```batch
+Start-ADSyncSyncCycle -PolicyType Delta
 ```
