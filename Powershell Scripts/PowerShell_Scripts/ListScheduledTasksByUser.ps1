@@ -1,5 +1,5 @@
-# Define the username for which you want to find the tasks
-$userName = "UserName"
+# Define the usernames for which you want to find the tasks
+$userNames = @("UserName-000", "UserName-001", "UserName-002")
 
 # Fetch all scheduled tasks
 $scheduledTasks = Get-ScheduledTask | ForEach-Object {
@@ -22,7 +22,8 @@ $scheduledTasks = Get-ScheduledTask | ForEach-Object {
     }
 }
 
-# Filter tasks based on the username and display them
-$filteredTasks = $scheduledTasks | Where-Object { $_.UserId -eq $userName }
+# Filter tasks based on the usernames and display them
+$filteredTasks = $scheduledTasks | Where-Object { $userNames -contains $_.UserId }
 
-$filteredTasks | Format-Table -AutoSize
+# Write to a file
+$filteredTasks | Format-Table -AutoSize | Out-File -FilePath "C:\Temp\FilteredTasks.txt"
