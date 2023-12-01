@@ -108,3 +108,8 @@ Get-ADPrincipalGroupMembership -Identity "UserName" | Select-Object Name
 Start-ADSyncSyncCycle -PolicyType Delta
 ```
 - [README_Delta-Sync.md](Management_README/README_Delta-Sync.md)
+
+### Locate the Executable Path
+```powershell
+sc qc 'ServiceName'
+```
