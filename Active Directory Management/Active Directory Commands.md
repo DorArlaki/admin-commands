@@ -113,3 +113,12 @@ Start-ADSyncSyncCycle -PolicyType Delta
 ```powershell
 sc qc 'ServiceName'
 ```
+
+### Open Users, Contacts, Groups Window
+```powershell
+rundll32 dsquery, OpenQueryWindow
+```
+
+```powershelll
+dsquery *
+```
