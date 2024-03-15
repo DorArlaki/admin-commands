@@ -122,3 +122,8 @@ rundll32 dsquery, OpenQueryWindow
 ```powershelll
 dsquery *
 ```
+
+### Forcefully Terminate Process
+```powershell
+taskkill /F /IM vmware.exe
+```
