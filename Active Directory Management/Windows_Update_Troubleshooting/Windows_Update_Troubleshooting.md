@@ -1,4 +1,4 @@
-1.  Stop the Windows Update service:
+1. Stop the Windows Update service:
 ```bash
 net stop wuauserv
 ```
@@ -10,13 +10,13 @@ msdt.exe /id WindowsUpdateDiagnostic
 ```
 Executing this command will launch the Windows Update Troubleshooter, which can identify and fix common issues with Windows updates.
 
-3.Delete the SoftwareDistribution folder:
+3. Delete the SoftwareDistribution folder:
 ```bash
 rd /s /q %SystemRoot%\SoftwareDistribution
 ```
 This command will remove the SoftwareDistribution folder, which sometimes gets corrupted and causes update failures. Deleting it allows Windows to recreate the folder and download fresh update files.
 
-4.Start the Windows Update service:
+4. Start the Windows Update service:
 ```bash
 net start wuauserv
 ```
