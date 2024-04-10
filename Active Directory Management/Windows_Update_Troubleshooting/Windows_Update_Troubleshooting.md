@@ -40,3 +40,42 @@ net start cryptSvc
 net start bits
 net start msiserver
 ```
+
+---
+reagentc /info
+reagentc /disable
+
+diskpart
+list disk
+
+sel disk <Windows RE location harddisk NUMBER>
+#For example : sel disk 0
+
+list part 
+# we want the Primary Pratition
+
+sel part <Primary Pratition NUMBER>
+
+shrink desired=250 minimum=250 
+
+sel part <Recovery Pratition NUMBER>
+delete partition override
+
+list disk # Cheack if MBR \ GPT  - most will be GPT
+# FOR GPT use this command :
+create pratition primary id=de94bba4-06d1-4d40-a16a-bfd50179d6ac
+gpt attributes =0x8000000000000001
+
+
+# FOR MBR use this commands:
+create partition primary id=27
+
+
+
+format quick fs=ntfs label="Windows RE tools"
+list vol # to verif the Pratition 
+exit
+
+shell >
+reagentc /enable
+reagentc /info
