@@ -42,18 +42,18 @@ net start msiserver
 ```
 
 ---
+
+### Fix <> ERROR
+```
 reagentc /info
 reagentc /disable
-
 diskpart
 list disk
-
 sel disk <Windows RE location harddisk NUMBER>
 #For example : sel disk 0
 
 list part 
 # we want the Primary Pratition
-
 sel part <Primary Pratition NUMBER>
 
 shrink desired=250 minimum=250 
@@ -79,3 +79,4 @@ exit
 shell >
 reagentc /enable
 reagentc /info
+```
