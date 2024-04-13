@@ -25,7 +25,7 @@ Finally, this command restarts the Windows Update service, enabling it to resume
 After following these steps, try running Windows Update again to see if the issue persists. If it does, you may need to investigate further or seek additional assistance to diagnose and resolve the underlying problem.
 
 
-# More - *** Run one by one ***
+# More -  Run one by one 
 ### Reset Windows Update Components
 If Windows Update components are corrupted, resetting them can often resolve issues. Open Command Prompt as an administrator and run the following commands one by one:
 ```bash
@@ -63,7 +63,7 @@ delete partition override
 
 list disk # Cheack if MBR \ GPT  - most will be GPT
 # FOR GPT use this command :
-create pratition primary id=de94bba4-06d1-4d40-a16a-bfd50179d6ac
+create partition primary id=de94bba4-06d1-4d40-a16a-bfd50179d6ac
 gpt attributes =0x8000000000000001
 
 
